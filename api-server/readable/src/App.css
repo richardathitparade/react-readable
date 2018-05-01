@@ -1,0 +1,223 @@
+button {
+  color: #fff;
+  background-color:
+}
+input {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #eee;
+}
+textarea {
+  width: 100%;
+    border-radius: 5px;
+    background-color: #eee;
+      min-height: 100px;
+}
+button {
+  background-color: #4267b2;
+  width: 100%;
+}
+.post-section {
+  width: 100%;
+  display: flex;
+    justify-content: center;
+  align-items: center;
+}
+.post-body {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.post-item-header{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.post-item-title {
+  display: flex;
+  width: 50%;
+  margin: 3px;
+  height: 35px;
+
+}
+.post-item-body {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.post-item-footer-item {
+  display: flex;
+  width: 95%;
+}
+.post-item-footer-save {
+  display: flex;
+  width: 5%;
+}
+.post-item-footer-save:hover {
+   border: solid blue 1px;
+   cursor: pointer;
+}
+.post-item-footer {
+  display: flex;
+  width: 100%;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.category-grid{
+  display: flex;
+}
+.lower-right-add {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: green;
+  border: solid 1px f7f4f4;
+  width: 50px;
+  height: 50px;
+  box-shadow: 3px 1px grey;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  display: flex;
+}
+.delete-modal {
+  background-color: #fff;
+  border-radius: 15px;
+  display:flex;
+  width: 400px;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.delete-modal-row {
+  width: 50%;
+  min-height: 80px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete-modal-item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button.modal-button {
+  width: 100%;
+  border-radius: 5px;
+}
+.vote-count {
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
+  min-width: 35px;
+}
+.vote-count-item {
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.category-cell {
+  background-color: #eee;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  margin: 2px;
+}
+.back-link {
+  display: flex;
+    flex: 1;
+    padding: 10px;
+}
+.category-cell-highlighted {
+  border-bottom: solid black 1px;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+}
+.post-col-header{
+  background-color: #eee;
+
+  display: flex;
+  margin: 1px;
+  padding: 10px;
+}
+ .vote-col-header {
+  background-color: #eee;
+  cursor: pointer;
+  margin: 1px;
+  padding: 10px;
+  min-width: 85px;
+  max-width: 85px;
+}
+.vote-col, .post-buttons,.comment, .post,.post-detail {
+  display: flex;
+}
+.button-item:hover, .post:hover  {
+  border: solid black 1px;
+}
+.comment-item {
+  background-color: #c5d2db;
+  cursor: pointer;
+  flex: 1;
+  margin: 1px;
+  padding: 10px;
+}
+.post-item {
+  background-color: #fff;
+  cursor: pointer;
+  flex: 1;
+  margin: 1px;
+  padding: 10px;
+}
+.button-item,  .post-detail-item {
+  background-color: #ddd;
+  cursor: pointer;
+  flex: 1;
+  margin: 1px;
+  padding: 10px;
+}
+.post-item-header {
+  cursor: pointer;
+  flex: 1;
+  margin: 1px;
+  padding: 10px;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
