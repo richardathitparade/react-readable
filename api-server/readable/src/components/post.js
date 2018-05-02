@@ -24,7 +24,7 @@ class Post extends Component {
 
     let dts = new Date(this.props.post.timestamp);
 
-    let newPath = "/post/" + this.props.id;
+    let newPath = "/" + this.props.post.category + "/" + this.props.id;
 
     let  editPath = "/edit/post/" + this.props.category +"/" + this.props.id;
     return (

@@ -4,6 +4,7 @@ import * as actions from "../actions";
 import Comment from "./comment";
 import AddButton from "./addButton";
 import AddComment from "./addComment";
+import FileNotFound from "./FileNotFound";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 class PostDetails extends Component {
   componentDidMount() {
@@ -32,9 +33,11 @@ class PostDetails extends Component {
   }
   render() {
     let deletePath ;
+    console.log(this.props.highlighted_post);
     if (
       this.props.highlighted_post !== null &&
-      typeof this.props.highlighted_post !== "undefined"
+      typeof this.props.highlighted_post !== "undefined" &&
+      Object.keys(this.props.highlighted_post).length > 0
     ) {
       deletePath = "/delete/post/" + this.props.match.params.id + "/" + this.props.highlighted_post.category;
       let dts = new Date(this.props.highlighted_post.timestamp);
@@ -172,7 +175,7 @@ class PostDetails extends Component {
         </div>
       );
     } else {
-      return <div>Post Details</div>;
+      return (<FileNotFound />);
     }
   }
 }

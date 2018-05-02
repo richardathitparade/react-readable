@@ -25,11 +25,11 @@ class App extends Component {
           <BrowserRouter>
           <div>
           <Route exact path="/" component={Categories} />
-          <Route exact path="/post/:id" component={PostDetails} />
+          <Route exact path="/:category/:id" component={PostDetails} />
           <Route exact path="/edit/post/:from/:id" component={EditPost} />
           <Route exact path="/delete/post/:id" component={PostDetails} />
           <Route exact path="/category/:category" component={Categories} />
-          <ModalRoute component={DeleteModal} path='/delete/:type/:id/:parentId' parentPath="/" /> 
+          <ModalRoute component={DeleteModal} path='/delete/:type/:id/:parentId' parentPath="/" />
            <ModalContainer />
           </div>
         </BrowserRouter>
